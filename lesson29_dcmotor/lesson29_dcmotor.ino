@@ -8,8 +8,6 @@ typedef void (*changeSpeed)();
 void stop();
 void forwardHalfSpeed();
 void forwardFullSpeed();
-void reverseHalfSpeed();
-void reverseFullSpeed();
 
 const changeSpeed SPEEDS[3] = {
     stop,
@@ -28,8 +26,6 @@ void setup() {
     str.concat("\n0 = Stop.");
     str.concat("\n1 = Forward (half speed).");
     str.concat("\n2 = Forward (full speed).");
-    str.concat("\n3 = Reverse (half speed).");
-    str.concat("\n4 = Reverse (full speed).");
 
     Serial.println(str);
 }
